@@ -35,6 +35,7 @@ def main():
         print(" Main where all executions are -> file is main.py ")
         print(" Intro to Python Assignment: Week 3 Day 1 Assignment -> file is python_basics_week_3_day_1.py ")
         print(" Intro to Python Assignment: Week 3 Day 2 Assignment -> file is python_basics_week_3_day_2.py ")
+        print(" Intro to Python Assignment: Week 3 Day 3 Assignment -> file is python_function_flow_day_3.py ")
         # commands
         print("For mor commands: ")
         print("For more help, type: py main.py --help")
