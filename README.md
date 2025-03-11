@@ -1,7 +1,7 @@
-# Python Arithmetic CLI
+# Python Arithmetic & DSA CLI
 
 ## Overview
-This project provides a simple command-line interface (CLI) to perform basic arithmetic operations.
+This project provides a command-line interface (CLI) to perform basic arithmetic operations and data structure manipulations.
 
 ## Folder Structure
 ```
@@ -10,6 +10,7 @@ PLP-learning/
 │── week_3/
 │   │── __init__.py            # Marks the folder as a package
 │   │── python_arithmetics_day_1.py  # Contains arithmetic_math_calculator function
+│   │── python_dsa_day_2.py  # Contains data_structures function
 │── README.md                  # Documentation
 ```
 
@@ -28,12 +29,19 @@ PLP-learning/
 3. Ensure Python is installed (Python 3.x required).
 
 ## Usage
-Run the following command in your terminal:
+Run the following commands in your terminal:
 
+### Arithmetic Calculator
 ```sh
 py main.py run arithmetics
 ```
 This will start the arithmetic calculator where you can input two numbers and an operator (+, -, *, /).
+
+### Data Structures Operations
+```sh
+py main.py run dsa
+```
+This will execute a sequence of list operations, including appending, inserting, extending, sorting, and finding an index.
 
 ### Help Command
 To get a list of available commands:
@@ -48,11 +56,13 @@ py main.py --info
 ```
 
 ## Features
-- Performs addition, subtraction, multiplication, and division.
-- Provides error handling for invalid inputs.
+- Performs arithmetic calculations (addition, subtraction, multiplication, and division).
+- Provides data structure operations on lists.
+- Handles invalid inputs with error messages.
 - Displays usage instructions via `--help`.
 
 ## Example Execution
+### Arithmetic Calculator
 ```
 $ py main.py run arithmetics
 Enter First Number: 10
@@ -61,7 +71,25 @@ Enter Second Number: 5
 10 + 5 = 15
 ```
 
+### Data Structures
+```
+$ py main.py run dsa
+My list currently: [10, 20, 30, 40]
+My list after inserting 15 after 10 or at index 1: [10, 15, 20, 30, 40]
+My list after extending with list [50, 60, 70]: [10, 15, 20, 30, 40, 50, 60, 70]
+My list after removing last item on the list: [10, 15, 20, 30, 40, 50, 60]
+My list after sorting list in ascending order: [10, 15, 20, 30, 40, 50, 60]
+Index of 30 in my_list: 3
+```
+
 ## Troubleshooting
 - Ensure you are running the script from the project root directory.
 - If you get `ModuleNotFoundError`, make sure `week_3/__init__.py` exists.
 - If using a virtual environment, activate it before running the script.
+
+## Contribution
+Feel free to contribute by submitting pull requests or reporting issues.
+
+## License
+MIT License
+

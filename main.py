@@ -1,5 +1,6 @@
 import sys
 from week_3.python_arithmetics_day_1 import arithmetic_math_calculator
+from week_3.python_dsa_day_2 import data_structures
 
 def main():
     '''
@@ -12,7 +13,8 @@ def main():
 
     # DSA command
     if len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'dsa':
-        print(" Intro to Python Assignment: Week 3 Day 2 Assignment -> file is python_basics_week_3_day_2.py ")
+        print(" Intro to Python Assignment: Week 3 Day 2 Assignment -> file is python_dsa_day_2.py ")
+        data_structures()
 
     # help command
     elif len(sys.argv) == 2 and sys.argv[1] == '--help':
