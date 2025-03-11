@@ -1,6 +1,7 @@
 import sys
 from week_3.python_arithmetics_day_1 import arithmetic_math_calculator
 from week_3.python_dsa_day_2 import data_structures
+from week_3.python_function_flow_day_3 import discount_prompter
 
 def main():
     '''
@@ -12,9 +13,14 @@ def main():
         arithmetic_math_calculator()
 
     # DSA command
-    if len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'dsa':
+    elif len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'dsa':
         print(" Intro to Python Assignment: Week 3 Day 2 Assignment -> file is python_dsa_day_2.py ")
         data_structures()
+
+    # control flow and functions command
+    elif len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'functions':
+        print(" Intro to Python Assignment: Week 3 Day 3 Assignment -> file is python_function_flow_day_3.py ")
+        discount_prompter()
 
     # help command
     elif len(sys.argv) == 2 and sys.argv[1] == '--help':
