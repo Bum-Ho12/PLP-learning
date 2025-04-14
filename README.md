@@ -12,6 +12,7 @@ PLP-learning/
 │   │── python_arithmetics_week_1.py  # Contains arithmetic_math_calculator function
 │   │── python_dsa_week_2.py  # Contains data_structures function
 │   │── python_function_flow_week_3.py  # Contains discount_prompter function
+│   │── python_file_handling_week_4.py  # Contains file_prompter function
 │── README.md                  # Documentation
 ```
 
@@ -49,6 +50,12 @@ This will execute a sequence of list operations, including appending, inserting,
 py main.py run functions
 ```
 This will execute a function that calculates discounts based on user input.
+
+### File Handling
+```sh
+py main.py run files
+```
+This will execute a function that reads and modifies a file added as a input.
 
 ### Help Command
 To get a list of available commands:
