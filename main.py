@@ -2,6 +2,7 @@ import sys
 from weeks.python_arithmetics_week_1 import arithmetic_math_calculator
 from weeks.python_dsa_week_2 import data_structures
 from weeks.python_function_flow_week_3 import discount_prompter
+from weeks.python_file_handling_week_4 import file_prompter
 
 def main():
     '''
@@ -22,6 +23,11 @@ def main():
         print(" Intro to Python Assignment: Week 3 Assignment -> file is python_function_flow_week_3.py ")
         discount_prompter()
 
+    # file handling command
+    elif len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'files':
+        print(" Intro to Python Assignment: Week 4 Assignment -> file is python_file_handling_week_4.py ")
+        file_prompter()
+
     # help command
     elif len(sys.argv) == 2 and sys.argv[1] == '--help':
         print("Usage: py main.py run <key_word>")
@@ -36,6 +42,7 @@ def main():
         print(" Intro to Python Assignment: Week 1 Assignment -> file is python_arithmetics_week_1.py ")
         print(" Intro to Python Assignment: Week 2 Assignment -> file is python_dsa_week_2.py ")
         print(" Intro to Python Assignment: Week 3 Assignment -> file is python_function_flow_week_3.py ")
+        print(" Intro to Python Assignment: Week 4 Assignment -> file is python_file_handling_week_4.py ")
         # commands
         print("For mor commands: ")
         print("For more help, type: py main.py --help")
