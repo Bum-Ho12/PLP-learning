@@ -13,6 +13,7 @@ PLP-learning/
 │   │── python_dsa_week_2.py  # Contains data_structures function
 │   │── python_function_flow_week_3.py  # Contains discount_prompter function
 │   │── python_file_handling_week_4.py  # Contains file_prompter function
+│   │── python_oop_week_5.py  # Contains class_prompter and vehicle_prompter function
 │── README.md                  # Documentation
 ```
 
@@ -56,6 +57,13 @@ This will execute a function that calculates discounts based on user input.
 py main.py run files
 ```
 This will execute a function that reads and modifies a file added as a input.
+
+### OOP
+```sh
+py main.py run oop assignment_1
+py main.py run oop assignment_2
+```
+These 2 commands will execute the 2 assignments for week 5 OOP.
 
 ### Help Command
 To get a list of available commands:

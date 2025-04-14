@@ -3,6 +3,7 @@ from weeks.python_arithmetics_week_1 import arithmetic_math_calculator
 from weeks.python_dsa_week_2 import data_structures
 from weeks.python_function_flow_week_3 import discount_prompter
 from weeks.python_file_handling_week_4 import file_prompter
+from weeks.python_oop_week_5 import super_hero_prompter, vehicle_prompter
 
 def main():
     '''
@@ -27,6 +28,18 @@ def main():
     elif len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'files':
         print(" Intro to Python Assignment: Week 4 Assignment -> file is python_file_handling_week_4.py ")
         file_prompter()
+
+    # oop commands
+    elif len(sys.argv) == 4 and sys.argv[1] == 'run' and sys.argv[2] == 'oop':
+        print(" Intro to Python Assignment: Week 5 Assignment -> file is python_oop_week_5.py ")
+        if sys.argv[3] == 'assignment_1':
+            super_hero_prompter()
+        elif sys.argv[3] == 'assignment_2':
+            vehicle_prompter()
+        else:
+            print("Invalid command.")
+            print("Usage: py main.py run oop <sub_command>")
+            print("Available sub_commands: assignment_1, assignment_2")
 
     # help command
     elif len(sys.argv) == 2 and sys.argv[1] == '--help':
