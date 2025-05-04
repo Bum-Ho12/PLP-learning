@@ -15,6 +15,7 @@ PLP-learning/
 │   │── python_file_handling_week_4.py  # Contains file_prompter function
 │   │── python_oop_week_5.py  # Contains class_prompter and vehicle_prompter function
 │   │── python_iris_week_7.ipynb
+│   │── python_data_analysis_week_8.ipynb
 │── README.md                  # Documentation
 │── requirements.txt                 # packages
 ```
@@ -76,6 +77,12 @@ These 2 commands will execute the 2 assignments for week 5 OOP.
 py main.py run iris
 ```
 This will execute the iris ipynb file and invoke the code on browser(default).
+
+### Data Analysis Dataset
+```sh
+py main.py run data_analysis
+```
+This will execute the data analysis ipynb file and invoke the code on browser(default).
 
 ### Help Command
 To get a list of available commands:

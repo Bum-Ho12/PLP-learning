@@ -74,6 +74,19 @@ def main():
             # Open the notebook in the Jupyter interface
             open_notebook_in_browser(notebook_path)
 
+    # data analysis notebook command
+    elif len(sys.argv) == 3 and sys.argv[1] == 'run' and sys.argv[2] == 'data_analysis':
+        print(" Intro to Python Assignment: Week 7 Assignment -> file is python_data_analysis_week_8.ipynb ")
+        notebook_path = './weeks/python_data_analysis_week_8.ipynb'
+
+        if len(sys.argv) > 3 and sys.argv[3] == '--execute':
+            # Only execute the notebook without opening the interface
+            asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+            run_notebook(notebook_path)
+        else:
+            # Open the notebook in the Jupyter interface
+            open_notebook_in_browser(notebook_path)
+
     # help command
     elif len(sys.argv) == 2 and sys.argv[1] == '--help':
         print("Usage: py main.py run <key_word> [options]")
@@ -84,6 +97,7 @@ def main():
         print("  files - Runs the file handling assignment")
         print("  oop - Runs the oop assignment")
         print("  iris - Opens the iris data jupyter notebook in browser")
+        print("  data_analysis - Opens the data analysis jupyter notebook in browser")
         print("         Use with --execute to run without opening browser")
         print("  --help      - Displays this help message")
 
@@ -97,6 +111,7 @@ def main():
         print(" Intro to Python Assignment: Week 4 Assignment -> file is python_file_handling_week_4.py ")
         print(" Intro to Python Assignment: Week 5 Assignment -> file is python_oop_week_5.py ")
         print(" Intro to Python Assignment: Week 7 Assignment -> file is python_iris_week_7.ipynb ")
+        print(" Intro to Python Assignment: Week 7 Assignment -> file is python_data_analysis_week_8.ipynb ")
         # commands
         print("For more commands: ")
         print("For more help, type: py main.py --help")
