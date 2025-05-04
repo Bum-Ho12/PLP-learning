@@ -14,7 +14,9 @@ PLP-learning/
 │   │── python_function_flow_week_3.py  # Contains discount_prompter function
 │   │── python_file_handling_week_4.py  # Contains file_prompter function
 │   │── python_oop_week_5.py  # Contains class_prompter and vehicle_prompter function
+│   │── python_iris_week_7.ipynb
 │── README.md                  # Documentation
+│── requirements.txt                 # packages
 ```
 
 ## Installation
@@ -30,6 +32,10 @@ PLP-learning/
    env\Scripts\activate     # On Windows
    ```
 3. Ensure Python is installed (Python 3.x required).
+4. Install packages:
+   ```sh
+   pip install -r requirements.txt
+   ```
 
 ## Usage
 Run the following commands in your terminal:
@@ -64,6 +70,12 @@ py main.py run oop assignment_1
 py main.py run oop assignment_2
 ```
 These 2 commands will execute the 2 assignments for week 5 OOP.
+
+### Iris Dataset
+```sh
+py main.py run iris
+```
+This will execute the iris ipynb file and invoke the code on browser(default).
 
 ### Help Command
 To get a list of available commands:
